@@ -1,0 +1,24 @@
+{
+  "name": "progressive-web-apps-2223",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/maxvl3/progressive-web-apps-2223.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/maxvl3/progressive-web-apps-2223/issues"
+  },
+  "homepage": "https://github.com/maxvl3/progressive-web-apps-2223#readme",
+  "dependencies": {
+    "express": "^4.18.2",
+    "handlebars": "^4.7.7",
+    "nodemon": "^2.0.21"
+  }
+}
