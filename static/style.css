@@ -5,12 +5,7 @@ html {
   padding: 0;
 }
 
-nav{
-    background-color: black;
-    padding: 20px;
-}
-
 h1{
-    color: white;
+    color: black;
     font-size: 30px;
 }

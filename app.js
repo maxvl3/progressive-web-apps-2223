@@ -9,8 +9,13 @@ app.set("views", "./views");
 
 app.use("/static", express.static("static"));
 
-app.get('/', (req, res) => {
-    res.render("test");
+app.get('/', async (req, res) => {
+    await fetch('https://www.rijksmuseum.nl/api/nl/collection?key=yLfBqOT3&p=1&ps=10')
+    .then(res => res.json())
+    .then(json => {
+        const kunstwerken = json.artObjects;
+        res.render("test", { kunstwerken });
+    })
 })
 
 app.listen(port, () => {
