@@ -1,0 +1,13 @@
+{{#each kunstwerk}}
+    <div class="detail">
+        <div class="detailimage">
+            <img src="{{this.webImage.url}}" alt="">
+        </div>
+        <div class="detailtext">
+            <h1>{{this.title}}</h1>
+            <p>{{this.principalOrFirstMaker}}</p>
+        </div>
+    </div>
+    <div id="overlay"></div>
+    <img id="background" src="{{this.webImage.url}}" alt="">
+{{/each}}

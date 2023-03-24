@@ -1,0 +1,10 @@
+{{>header}}
+
+<div class="populair">
+    <h2>Most populair</h2>
+    <div class="artworks">
+        {{#each kunstwerken}}
+        <a href="/{{this.objectNumber}}"><img src="{{this.webImage.url}}" alt=""></a>
+        {{/each}}
+    </div>
+</div>

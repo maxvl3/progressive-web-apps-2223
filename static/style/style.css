@@ -1,0 +1,144 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+*,
+html {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: #372C25;
+}
+
+header {
+  padding-left: 50px;
+  height: 450px;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-direction: column;
+  background-image: url(../images/banner.png);
+  background-position: bottom;
+  background-size: cover;
+  padding-right: 45%;
+  border-radius: 0px 0px 150px 0px;
+  width: 92%;
+}
+header h1 {
+  color: white;
+  font-size: 50px;
+  font-weight: 600;
+}
+header form {
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 7px;
+  border-radius: 1000px;
+}
+header form input {
+  background-color: white;
+  border: none;
+  height: 45px;
+  font-size: 18px;
+  border-radius: 1000px;
+  padding: 0px 20px;
+  width: 100%;
+}
+header form input:focus, header form input:active {
+  outline: none;
+}
+header form button {
+  background: #9B6B50;
+  font-weight: 600;
+  font-size: 18px;
+  border: none;
+  color: white;
+  height: 45px;
+  border-radius: 1000px;
+  padding: 0px 20px;
+}
+
+.populair {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.populair h2 {
+  color: white;
+  font-size: 32px;
+  font-weight: 600;
+  padding: 30px 50px 0px 50px;
+}
+.populair .artworks {
+  display: flex;
+  gap: 20px;
+  overflow-x: scroll;
+}
+.populair .artworks a {
+  text-decoration: none;
+  width: 225px;
+  height: 225px;
+}
+.populair .artworks a img {
+  width: 225px;
+  height: 225px;
+  aspect-ratio: 1/1;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 20px;
+}
+.populair .artworks a:first-child {
+  margin-left: 50px;
+}
+.populair .artworks a:last-child {
+  margin-right: 50px;
+}
+.populair .artworks::-webkit-scrollbar {
+  display: none;
+}
+
+#background {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -10;
+}
+
+#overlay {
+  background-color: #372C25;
+  opacity: 0.75;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: -9;
+}
+
+.detail {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+}
+.detail .detailimage img {
+  width: 400px;
+  border-radius: 20px;
+}
+.detail .detailtext {
+  color: white;
+  width: 400px;
+}
+.detail .detailtext h1 {
+  margin-bottom: 10px;
+  font-weight: 600;
+}/*# sourceMappingURL=style.css.map */
