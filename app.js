@@ -13,6 +13,10 @@ app.set("views", "./views");
 
 app.use(express.static("static"));
 
+app.get('/manifest.json', (req, res) => {
+  res.sendFile(__dirname + '/manifest.json');
+});
+
 app.get('/', async (req, res) => {
     await fetch('https://www.rijksmuseum.nl/api/nl/collection?key=yLfBqOT3&involvedMaker=Rembrandt+van+Rijn&p=1&ps=10')
     .then(res => res.json())
