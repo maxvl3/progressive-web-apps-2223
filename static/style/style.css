@@ -141,4 +141,8 @@ header form button {
 .detail .detailtext h1 {
   margin-bottom: 10px;
   font-weight: 600;
+}
+
+.searchresults img {
+  width: 100px;
 }/*# sourceMappingURL=style.css.map */
