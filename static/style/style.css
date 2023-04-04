@@ -8,11 +8,11 @@ html {
 }
 
 body {
-  background: #372C25;
+  background: #372c25;
 }
 
-header {
-  padding-left: 50px;
+#home header {
+  padding: 50px;
   height: 450px;
   display: flex;
   gap: 20px;
@@ -21,23 +21,24 @@ header {
   background-image: url(../images/banner.png);
   background-position: bottom;
   background-size: cover;
-  padding-right: 45%;
   border-radius: 0px 0px 150px 0px;
-  width: 92%;
+  width: 95%;
 }
-header h1 {
+#home header h1 {
   color: white;
   font-size: 50px;
   font-weight: 600;
+  max-width: 600px;
 }
-header form {
+#home header form {
   background-color: white;
   display: flex;
   justify-content: space-between;
   padding: 7px;
   border-radius: 1000px;
+  max-width: 600px;
 }
-header form input {
+#home header form input {
   background-color: white;
   border: none;
   height: 45px;
@@ -46,11 +47,12 @@ header form input {
   padding: 0px 20px;
   width: 100%;
 }
-header form input:focus, header form input:active {
+#home header form input:focus,
+#home header form input:active {
   outline: none;
 }
-header form button {
-  background: #9B6B50;
+#home header form button {
+  background: #9b6b50;
   font-weight: 600;
   font-size: 18px;
   border: none;
@@ -59,60 +61,69 @@ header form button {
   border-radius: 1000px;
   padding: 0px 20px;
 }
-
-.populair {
+#home .populair {
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
-.populair h2 {
+#home .populair h2 {
   color: white;
   font-size: 32px;
   font-weight: 600;
   padding: 30px 50px 0px 50px;
 }
-.populair .artworks {
+#home .populair .artworks {
   display: flex;
   gap: 20px;
   overflow-x: scroll;
 }
-.populair .artworks a {
+#home .populair .artworks a {
   text-decoration: none;
   width: 225px;
   height: 225px;
 }
-.populair .artworks a img {
+#home .populair .artworks a img {
   width: 225px;
   height: 225px;
   aspect-ratio: 1/1;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   border-radius: 20px;
 }
-.populair .artworks a:first-child {
+#home .populair .artworks a:first-child {
   margin-left: 50px;
 }
-.populair .artworks a:last-child {
+#home .populair .artworks a:last-child {
   margin-right: 50px;
 }
-.populair .artworks::-webkit-scrollbar {
+#home .populair .artworks::-webkit-scrollbar {
   display: none;
 }
 
-#background {
+@media only screen and (max-width: 745px) {
+  #home header {
+    border-radius: 0;
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 530px) {
+  #home header h1 {
+    font-size: 38px;
+  }
+}
+#detail #background {
   position: fixed;
   width: 100vw;
   height: 100vh;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: -10;
 }
-
-#overlay {
-  background-color: #372C25;
+#detail #overlay {
+  background-color: #372c25;
   opacity: 0.75;
   position: fixed;
   top: 0;
@@ -121,8 +132,7 @@ header form button {
   right: 0;
   z-index: -9;
 }
-
-.detail {
+#detail .detail {
   display: flex;
   gap: 20px;
   align-items: center;
@@ -130,19 +140,111 @@ header form button {
   width: 100vw;
   height: 100vh;
 }
-.detail .detailimage img {
+#detail .detail .detailimage img {
   width: 400px;
   border-radius: 20px;
 }
-.detail .detailtext {
+#detail .detail .detailtext {
   color: white;
   width: 400px;
 }
-.detail .detailtext h1 {
+#detail .detail .detailtext h1 {
   margin-bottom: 10px;
   font-weight: 600;
 }
+#detail #close {
+  width: 50px;
+  position: absolute;
+  top: 50px;
+  right: 50px;
+  z-index: 500;
+  cursor: pointer;
+}
 
-.searchresults img {
-  width: 100px;
-}/*# sourceMappingURL=style.css.map */
+#search header {
+  padding: 50px;
+  height: 300px;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-direction: column;
+  background-image: url(../images/banner.png);
+  background-position: bottom;
+  background-size: cover;
+  border-radius: 0px 0px 150px 0px;
+  width: 95%;
+}
+#search header h1 {
+  color: white;
+  font-size: 50px;
+  font-weight: 600;
+}
+#search header form {
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 7px;
+  border-radius: 1000px;
+  max-width: 600px;
+}
+#search header form input {
+  background-color: white;
+  border: none;
+  height: 45px;
+  font-size: 18px;
+  border-radius: 1000px;
+  padding: 0px 20px;
+  width: 100%;
+}
+#search header form input:focus,
+#search header form input:active {
+  outline: none;
+}
+#search header form button {
+  background: #9b6b50;
+  font-weight: 600;
+  font-size: 18px;
+  border: none;
+  color: white;
+  height: 45px;
+  border-radius: 1000px;
+  padding: 0px 20px;
+}
+#search .searchresults {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  padding: 50px;
+}
+#search .searchresults a {
+  text-decoration: none;
+  width: 225px;
+  height: 225px;
+}
+#search .searchresults a img {
+  width: 225px;
+  height: 225px;
+  aspect-ratio: 1/1;
+  -o-object-fit: cover;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+@media only screen and (max-width: 745px) {
+  #search header {
+    border-radius: 0;
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 530px) {
+  #search header h1 {
+    font-size: 38px;
+  }
+}
+#offline {
+  padding: 50px;
+}
+#offline h1,
+#offline p {
+  color: white;
+} /*# sourceMappingURL=style.css.map */

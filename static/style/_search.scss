@@ -1,0 +1,93 @@
+#search {
+  header {
+    padding: 50px;
+    height: 300px;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-direction: column;
+    background-image: url(../images/banner.png);
+    background-position: bottom;
+    background-size: cover;
+    border-radius: 0px 0px 150px 0px;
+    width: 95%;
+
+    h1 {
+      color: white;
+      font-size: 50px;
+      font-weight: 600;
+    }
+
+    form {
+      background-color: white;
+      display: flex;
+      justify-content: space-between;
+      padding: 7px;
+      border-radius: 1000px;
+      max-width: 600px;
+      input {
+        background-color: white;
+        border: none;
+        height: 45px;
+        font-size: 18px;
+        border-radius: 1000px;
+        padding: 0px 20px;
+        width: 100%;
+      }
+      input:focus,
+      input:active {
+        outline: none;
+      }
+      button {
+        background: #9b6b50;
+        font-weight: 600;
+        font-size: 18px;
+        border: none;
+        color: white;
+        height: 45px;
+        border-radius: 1000px;
+        padding: 0px 20px;
+      }
+    }
+  }
+
+  .searchresults {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 50px;
+
+    a {
+      text-decoration: none;
+      width: 225px;
+      height: 225px;
+
+      img {
+        width: 225px;
+        height: 225px;
+        aspect-ratio: 1/1;
+        object-fit: cover;
+        border-radius: 20px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 745px) {
+  #search {
+    header {
+      border-radius: 0;
+      width: 100%;
+    }
+  }
+}
+
+@media only screen and (max-width: 530px) {
+  #search {
+    header {
+      h1 {
+        font-size: 38px;
+      }
+    }
+  }
+}

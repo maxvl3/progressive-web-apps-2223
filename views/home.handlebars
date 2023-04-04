@@ -1,10 +1,22 @@
-{{>header}}
+<body id="home">
+  <header>
+    <h1>Experience the beauty of art like never before.</h1>
+    <form action="/search" method="POST">
+      <input type="text" name="input" placeholder="Search for an artist.." />
+      <button type="submit">Search</button>
+    </form>
+  </header>
 
-<div class="populair">
+  <div class="populair">
     <h2>Most populair</h2>
     <div class="artworks">
-        {{#each kunstwerken}}
-        <a href="/artwork/{{this.objectNumber}}"><img src="{{this.webImage.url}}" alt=""></a>
-        {{/each}}
+      {{#each kunstwerken}}
+        <a href="/artwork/{{this.objectNumber}}"><img
+            src="{{this.webImage.url}}1000"
+            alt=""
+            loading="lazy"
+          /></a>
+      {{/each}}
     </div>
-</div>
+  </div>
+</body>

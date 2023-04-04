@@ -1,5 +1,19 @@
-<div class="searchresults">
+<body id="search">
+  <header>
+    <h1>Search results: {{searchinput}}</h1>
+    <form action="/search" method="POST">
+      <input type="text" name="input" placeholder="Search for an artist.." />
+      <button type="submit">Search</button>
+    </form>
+  </header>
+
+  <div class="searchresults">
     {{#each searchresult}}
-        <img src="{{this.webImage.url}}" alt="">
+      <a href="/artwork/{{this.objectNumber}}"><img
+          src="{{this.webImage.url}}1000"
+          alt=""
+          loading="lazy"
+        /></a>
     {{/each}}
-</div>
+  </div>
+</body>

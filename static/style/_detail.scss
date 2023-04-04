@@ -1,0 +1,55 @@
+#detail {
+  #background {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -10;
+  }
+
+  #overlay {
+    background-color: #372c25;
+    opacity: 0.75;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -9;
+  }
+
+  .detail {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    .detailimage {
+      img {
+        width: 400px;
+        border-radius: 20px;
+      }
+    }
+    .detailtext {
+      color: white;
+      width: 400px;
+      h1 {
+        margin-bottom: 10px;
+        font-weight: 600;
+      }
+    }
+  }
+
+  #close {
+    width: 50px;
+    position: absolute;
+    top: 50px;
+    right: 50px;
+    z-index: 500;
+    cursor: pointer;
+  }
+}
