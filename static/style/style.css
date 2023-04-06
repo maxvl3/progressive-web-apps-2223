@@ -87,7 +87,7 @@ body {
   height: 225px;
   aspect-ratio: 1/1;
   -o-object-fit: cover;
-  object-fit: cover;
+     object-fit: cover;
   border-radius: 20px;
 }
 #home .populair .artworks a:first-child {
@@ -116,7 +116,7 @@ body {
   width: 100vw;
   height: 100vh;
   -o-object-fit: cover;
-  object-fit: cover;
+     object-fit: cover;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -226,7 +226,7 @@ body {
   height: 225px;
   aspect-ratio: 1/1;
   -o-object-fit: cover;
-  object-fit: cover;
+     object-fit: cover;
   border-radius: 20px;
 }
 
@@ -247,4 +247,4 @@ body {
 #offline h1,
 #offline p {
   color: white;
-} /*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */
